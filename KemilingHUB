@@ -18,7 +18,7 @@ if not gameid[game.PlaceId] then
 else
     -- JawaTengah
     elseif game.PlaceId == 9508940498 then
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/AlvanF/Tower-of-Hell/main/.lua"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Alvantv/Jawatengah/refs/heads/main/KemilingHUB"))()
     -- JawaBarat
     elseif game.PlaceId == 9233343468 then
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Alvantv/JawaBarat/refs/heads/main/KemilingHUB"))()
