@@ -16,10 +16,10 @@ end
 if not gameid[game.PlaceId] then
     notif("Unsupported Game", "This script does not support this game.", 5)
 else
-    -- JawaTengah
-    elseif game.PlaceId == 9508940498 then
+    -- Jawatengah
+    if game.PlaceId == 9508940498 then
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Alvantv/Jawatengah/refs/heads/main/KemilingHUB"))()
-    -- JawaBarat
+    -- Jawabarat
     elseif game.PlaceId == 9233343468 then
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Alvantv/JawaBarat/refs/heads/main/KemilingHUB"))()
     -- Jakarta
