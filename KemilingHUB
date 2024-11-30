@@ -1,0 +1,30 @@
+local gameid = { 
+    [14005966837] = true, -- Jakarta
+    [9233343468] = true, -- JawaBarat
+    [9508940498] = true, -- JawaTengah
+}
+
+function notif(title, txt, dur)
+    game.StarterGui:SetCore("SendNotification", {
+        Title = title;
+        Text = txt;
+        Duration = dur;
+    })
+end
+
+-- Check if the current game ID is supported
+if not gameid[game.PlaceId] then
+    notif("Unsupported Game", "This script does not support this game.", 5)
+else
+    -- JawaTengah
+    elseif game.PlaceId == 9508940498 then
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/AlvanF/Tower-of-Hell/main/.lua"))()
+    -- JawaBarat
+    elseif game.PlaceId == 9233343468 then
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Alvantv/JawaBarat/refs/heads/main/KemilingHUB"))()
+    -- Jakarta
+    elseif game.PlaceId == 14005966837 then
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Alvantv/Jakarta/refs/heads/main/KemilingHUB"))()
+    end
+end
+-- Soon
