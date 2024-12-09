@@ -2,7 +2,8 @@ local gameid = {
     [14005966837] = true, -- Jakarta
     [9233343468] = true, -- JawaBarat
     [9508940498] = true, -- JawaTengah
-    [126447951598274] = true, -- SwimLeague
+    [126447951598274] = true, -- SwimLeague world1
+    [138732687875539] = true, -- SwimLeague world2
 }
 
 function notif(title, txt, dur)
@@ -26,9 +27,12 @@ else
     -- Jakarta
     elseif game.PlaceId == 14005966837 then
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Alvantv/Jakarta/refs/heads/main/KemilingHUB"))()
-     -- Swim League
+    -- Swim League World 1
     elseif game.PlaceId == 126447951598274 then
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Alvantv/SwimLeague/refs/heads/main/KemilingHUB"))()
+    -- Swim League World 2
+    elseif game.PlaceId == 138732687875539 then
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Alvantv/SwimLeague/refs/heads/main/World2"))()
     end
 end
 -- Soon
