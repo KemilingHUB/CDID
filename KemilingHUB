@@ -35,7 +35,7 @@ else
     elseif game.PlaceId == 138732687875539 then
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Alvantv/SwimLeague/refs/heads/main/World2"))()
     -- Ride Drive Simulator
-    if game.PlaceId == 13564031955 then
+    elseif game.PlaceId == 13564031955 then
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Alvantv/Ride-Drive-Simulator/refs/heads/main/KemilingHUB"))()
     end
 end
