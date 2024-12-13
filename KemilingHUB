@@ -4,6 +4,7 @@ local gameid = {
     [9508940498] = true, -- JawaTengah
     [126447951598274] = true, -- SwimLeague world1
     [138732687875539] = true, -- SwimLeague world2
+    [13564031955] = true, -- Ride Drive Simulator
 }
 
 function notif(title, txt, dur)
@@ -33,6 +34,9 @@ else
     -- Swim League World 2
     elseif game.PlaceId == 138732687875539 then
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Alvantv/SwimLeague/refs/heads/main/World2"))()
+    -- Ride Drive Simulator
+    if game.PlaceId == 13564031955 then
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Alvantv/Ride-Drive-Simulator/refs/heads/main/KemilingHUB"))()
     end
 end
 -- Soon
